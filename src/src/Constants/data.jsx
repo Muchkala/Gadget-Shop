@@ -105,19 +105,14 @@ export const LeftMenuData = [
 
 export const productDetailImages = [
     {
-        id: 0,
+        id: 1,
         img: ProductDetailImg2,  // Large image
         imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3,ProductDetailImg2, ProductDetailImg3], // Small thumbnails
     },
     {
-        id: 1,
-        img: ProductDetailImg2,
-        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3,ProductDetailImg2, ProductDetailImg3p],
-    },
-    {
         id: 2,
         img: ProductDetailImg2,
-        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3 ,ProductDetailImg2, ProductDetailImg3],
+        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3,ProductDetailImg2, ProductDetailImg3p],
     },
     {
         id: 3,
@@ -126,6 +121,11 @@ export const productDetailImages = [
     },
     {
         id: 4,
+        img: ProductDetailImg2,
+        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3 ,ProductDetailImg2, ProductDetailImg3],
+    },
+    {
+        id: 5,
         img: ProductDetailImg2,
         imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3 ,ProductDetailImg2, ProductDetailImg3],
     },
