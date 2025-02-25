@@ -1,0 +1,70 @@
+.BgCartShow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh ;
+    background: rgba(0, 0, 0, 0.7);
+    /* Black with 0.3 opacity */
+    backdrop-filter: blur(5px);
+    /* Blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+     overflow-y: scroll;
+    height: 100%;
+
+    .CartShow {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        // position: relative;
+        width: 60%;
+        height: 600px;
+        //  height: 200%;
+        padding: 10px 20px !important;
+        background-color: #fff;
+        border-radius: 7px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+        .nameClose {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px !important;
+            border-bottom: 1px solid #ccc;
+
+            h5 {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #000;
+            }
+
+            .close-btn {
+
+                color: #ba0707;
+                cursor: pointer;
+
+                &:active {
+                    transform: scale(0.9);
+                    color: #ff0000e6;
+                }
+
+                svg {
+                    width: 33px;
+                    height: 33px;
+                }
+            }
+        }
+
+        .prdxCart {
+            width: 100%;
+            // overflow-x: auto;
+
+            .ProductBoxDiv {
+                justify-content: space-between;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.LogWithPart {
+    .LogWithTop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        height: 50px;
+        .line{
+            content: '';
+            width: 25%;
+            border: 1px solid #ccc;
+        }
+        .greyLineText{
+            max-width: 40%;
+            text-align: center;
+            color: #ccc;
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+    }
+
+    .LogWithBottom{
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 12px;
+        color: white ;
+        justify-content: space-evenly;
+
+        .LogWith1 , .LogWith2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            background: #EA4335;
+            height: 36px;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            gap: 5px;
+            color: white ;
+            border: none;
+            svg{
+                height: 12px;
+            }
+        }
+        .LogWith2{
+            background: #4285F4;
+            svg{
+                height: 10px;
+            }
+        }
+    }
+}

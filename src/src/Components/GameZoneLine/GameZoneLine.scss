@@ -1,0 +1,12 @@
+.row{
+    align-items: center;
+    .line{
+        content: '';
+        max-width: 1300px;
+        height: 1px;
+        background: #ffffff;
+    }
+    h2{
+        text-align: center;
+    }
+}

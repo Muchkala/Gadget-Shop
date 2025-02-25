@@ -1,0 +1,36 @@
+.detilsCarousel {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+
+    .leftBtn {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        img {
+            width: 100%;
+            height: 170px;
+            // border-radius: 20px;
+            border: 1px solid transparent;
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+
+    .activeImgBtn {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        transition: .5s;
+        opacity: .5;
+    }
+
+    .bigImg {
+        img {
+            height: 530px;
+            width: 500px;
+            border-radius: 20px;
+            object-fit: fill;
+        }
+    }
+}
