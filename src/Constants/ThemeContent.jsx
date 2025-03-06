@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { ProductBoxData } from "./data";
 
 const ThemeContext = createContext();
 
@@ -11,6 +12,22 @@ export const ThemeProvider = ({ children }) => {
   const [activeLogin, setActiveLogin] = useState(false);
 
 
+//   Sotib olinayotganda bosilgan productni torib olish va joatish 
+
+  const [dbNewData, setDbNewData] = useState(ProductBoxData)
+
+  const [clickedID, setClickedID] = useState()
+
+  console.log(clickedID)
+  console.log(dbNewData)
+
+  const handleBuyProduct = (ID , e) => {
+    // e.preventDefault()
+    setDbNewData((prev) => prev.filter((item) => item.id !== ID))
+  }
+
+
+//////////////////////////////////////////////////////////////
 
     const [activeCart , setActiveCart] = useState(false)
 
@@ -48,7 +65,7 @@ export const ThemeProvider = ({ children }) => {
 
 
   return (
-    <ThemeContext.Provider value={{activeCart,handleActiveCart, setListProductActive, handleListProductActive, listProductActive, activeBar,handleLeftMenuClick, leftMenuClick, handleActiveBar, handleLogin , activeLogin , barInfoStates, handleBarInfo }}>
+    <ThemeContext.Provider value={{activeCart,handleBuyProduct,setClickedID,handleActiveCart, setListProductActive, handleListProductActive, listProductActive, activeBar,handleLeftMenuClick, leftMenuClick, handleActiveBar, handleLogin , activeLogin , barInfoStates, handleBarInfo }}>
       {children}
     </ThemeContext.Provider>
   );

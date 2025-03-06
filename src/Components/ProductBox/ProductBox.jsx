@@ -3,9 +3,17 @@ import './ProductBox.scss'
 import { PiScalesBold } from 'react-icons/pi'
 import { FaRegHeart } from 'react-icons/fa'
 import { Col } from 'react-bootstrap'
+import { useTheme } from '../../Constants/ThemeContent'
 
 export default function ProductBox( {data}) {
+
+
+  const {setClickedID, handleBuyProduct} = useTheme()
+
+
   return (
+    
+
     <div className='ProductBoxDiv'>
     {
       data.map(({id, img, noviy, fullName, comment, saleCost, realCost})=>{
@@ -25,7 +33,7 @@ export default function ProductBox( {data}) {
             {noviy ? <div className="realCost" style={{color:'rgba(6, 15, 66, 1)'}}>{ noviy ? realCost : saleCost}<span style={{color:'rgba(6, 15, 66, 1)'}}>грн.</span> </div>
              : <div className="realCost">{ noviy ? realCost : saleCost}<span>грн.</span> </div>}
             </div>
-            <button>КУПИТЬ</button>
+            <button onClick={(e) => handleBuyProduct(id, e)}>КУПИТЬ</button>
           </div>
         </div>
         </div>

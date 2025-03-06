@@ -1,22 +1,22 @@
-import ProductImg1 from './../Assets/Img/ProductCartImg1.png';
-import ProductImg2 from './../Assets/Img/ProductCartImg2.png';
-import ProductImg3 from './../Assets/Img/ProductCartImg3.png';
-import ProductImg4 from './../Assets/Img/ProductCartImg4.png';
-import ProductImg5 from './../Assets/Img/ProductCartImg5.png';
-import ProductImg6 from './../Assets/Img/ProductCartImg6.png';
+import ProductImg1 from '../Assets/Img/ProductCartImg1.png';
+import ProductImg2 from '../Assets/Img/ProductCartImg2.png';
+import ProductImg3 from '../Assets/Img/ProductCartImg3.png';
+import ProductImg4 from '../Assets/Img/ProductCartImg4.png';
+import ProductImg5 from '../Assets/Img/ProductCartImg5.png';
+import ProductImg6 from '../Assets/Img/ProductCartImg6.png';
 
 import ProductDetailImg1 from '../Assets/Img/ProductDetailIMG1.png'
 import ProductDetailImg2 from '../Assets/Img/ProductDetailIMG2.png'
 import ProductDetailImg3 from '../Assets/Img/ProductDetailIMG3.png'
 
-import GeymerImg1 from './../Assets/Img/GeymerImg1.png';
-import GeymerImg2 from './../Assets/Img/GeymerImg2.png';
-import GeymerImg3 from './../Assets/Img/GeymerImg3.png';
-import GeymerImg4 from './../Assets/Img/GeymerImg4.png';
-import GeymerImg5 from './../Assets/Img/GeymerImg5.png';
-import GeymerImg6 from './../Assets/Img/GeymerImg6.png';
+import GeymerImg1 from '../Assets/Img/GeymerImg1.png';
+import GeymerImg2 from '../Assets/Img/GeymerImg2.png';
+import GeymerImg3 from '../Assets/Img/GeymerImg3.png';
+import GeymerImg4 from '../Assets/Img/GeymerImg4.png';
+import GeymerImg5 from '../Assets/Img/GeymerImg5.png';
+import GeymerImg6 from '../Assets/Img/GeymerImg6.png';
 
-import CommentProfile from './../Assets/Img/CommentProfile.png'
+import CommentProfile from '../Assets/Img/CommentProfile.png'
 
 import NewsImg1 from '../Assets/Img/NewsImg1.png'
 
@@ -112,7 +112,7 @@ export const productDetailImages = [
     {
         id: 2,
         img: ProductDetailImg2,
-        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3,ProductDetailImg2, ProductDetailImg3p],
+        imgSmall: [ProductDetailImg1, ProductDetailImg2, ProductDetailImg3,ProductDetailImg2, ProductDetailImg3],
     },
     {
         id: 3,
@@ -580,7 +580,7 @@ export const PrdBxCartData = [
   ];
 
 
-export const newsData =[
+export const newsData = [
     {
         id: 0,
         img: NewsImg1,

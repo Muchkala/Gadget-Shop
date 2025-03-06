@@ -5,7 +5,7 @@ import NavBottom from '../../Components/Navbar-bottom/NavBottom'
 import BarLeft from '../../Components/Navbar/BarLeft/BarLeft'
 import ShowWhere from '../../Components/ShowWhere/ShowWhere';
 import ProductTitle from '../../Components/ProductTitle/ProductTitle';
-import ProductTabs from './../../Components/ProductTabs/ProductTabs';
+import ProductTabs from '../../Components/ProductTabs/ProductTabs';
 import DetailsCarousel from '../../Components/DetailCarousel/DetailsCarousel';
 
 export default function ProductPage() {

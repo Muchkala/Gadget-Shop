@@ -2,7 +2,7 @@ import React from 'react'
 import './Toproducts.scss'
 import { Container, Row } from 'react-bootstrap'
 import UniTitle from '../UniTitle/UniTitle'
-import ProductBox from './../ProductBox/ProductBox';
+import ProductBox from '../ProductBox/ProductBox';
 import SeeMore from '../SeeMore/SeeMore';
 import { ProductBoxData } from '../../Constants/data';
 
