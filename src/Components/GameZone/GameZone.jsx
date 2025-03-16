@@ -7,6 +7,7 @@ import SeeMore from '../SeeMore/SeeMore'
 import GamerProducts from '../GamerProducts/GamerProducts'
 import UniTitle from '../UniTitle/UniTitle'
 import { ProductoxGeymers } from '../../Constants/data'
+import { Link } from 'react-router-dom'
 
 export default function GameZone() {
   return (
@@ -14,7 +15,7 @@ export default function GameZone() {
       <Container>
         <GameZoneLine/>
         <Row>
-           <ProductBox data={ProductoxGeymers} noviy = {1}/>
+          <Link to='/product'><ProductBox data={ProductoxGeymers}  noviy = {1}/></Link>
            <SeeMore blue = {false}/>
         </Row>
         <UniTitle text={'Категории для геймеров'}/>

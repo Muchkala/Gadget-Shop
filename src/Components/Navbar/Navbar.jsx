@@ -11,7 +11,7 @@ import { NavLinks } from '../../Constants/data'
 export default function Navbar() {
   
   const { activeBar, handleActiveBar } = useTheme();
-
+  
   return (
     <nav>
       <Container>

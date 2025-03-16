@@ -12,6 +12,7 @@ import { useTheme } from '../../Constants/ThemeContent'
 import ListProducts from '../ListProducts/ListProducts'
 import CartShow from '../CartShow/CartShow'
 import { IoCartOutline } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 export default function NavBottom() {
 
@@ -35,7 +36,7 @@ export default function NavBottom() {
         <Row>
         <Col xs={4} sm={5} md={5} lg={4} xl={3}>
           <ul >
-            <li><img src={navLogo} alt="" /></li>
+            <li><Link to={'/'}><img src={navLogo} alt="" /></Link></li>
             <li><button onClick={()=> handleListProductActive()}>КАТАЛОГ <p>ТОВАРОВ</p><span><LuBoxes /> </span></button></li>
           </ul>
           {listProductActive ? <ListProducts /> : ''}

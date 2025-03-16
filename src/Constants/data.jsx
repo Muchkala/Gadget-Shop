@@ -44,6 +44,25 @@ import LeftImg11 from '../Assets/Img/LeftMenuIMG11.svg'
 
 
 
+
+
+import DetailsCarouselPaymentBottom1 from '../Assets/Img/productPageBottom0.svg'
+import DetailsCarouselPaymentBottom2 from '../Assets/Img/productPageBottom1.png'
+import DetailsCarouselPaymentBottom3 from '../Assets/Img/productPageBottom2.png'
+import DetailsCarouselPaymentBottom4 from '../Assets/Img/productPageBottom3.png'
+import DetailsCarouselPaymentBottom5 from '../Assets/Img/productPageBottom4.png'
+
+
+
+
+import DetailsCarouselDeliveryBottom0 from '../Assets/Img/productPageBottomOplata0.svg'
+import DetailsCarouselDeliveryBottom1 from '../Assets/Img/productPageBottomOplata1.svg'
+import DetailsCarouselDeliveryBottom2 from '../Assets/Img/productPageBottomOplata2.svg'
+import DetailsCarouselDeliveryBottom3 from '../Assets/Img/productPageBottomOplata3.svg'
+import DetailsCarouselDeliveryBottom4 from '../Assets/Img/productPageBottomOplata4.svg'
+
+
+
 export const LeftMenuData = [
     {
         id: 1 ,
@@ -413,128 +432,128 @@ export const ListProductsData = [
 
 
 export const ProductBoxData = [
-  {
-    id: 1,
-    noviy: true,
-    mark: '',
-    img: ProductImg1,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600',
-  },
-  {
-    id: 2,
-    noviy: false,
-    mark: '',
-    img: ProductImg2,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 3,
-    noviy: false,
-    mark: '',
-    img: ProductImg3,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 4,
-    noviy: false,
-    mark: '',
-    img: ProductImg4,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 5,
-    noviy: false,
-    mark: '',
-    img: ProductImg5,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 6,
-    noviy: false,
-    mark: '',
-    img: ProductImg6,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 7,
-    noviy: false,
-    mark: '',
-    img: ProductImg1,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600',
-  },
-  {
-    id: 8,
-    noviy: false,
-    mark: '',
-    img: ProductImg2,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 9,
-    noviy: false,
-    mark: '',
-    img: ProductImg3,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 10,
-    noviy: false,
-    mark: '',
-    img: ProductImg4,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 11,
-    noviy: false,
-    mark: '',
-    img: ProductImg5,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600грн.',
-  },
-  {
-    id: 12,
-    noviy: true,
-    mark: '',
-    img: ProductImg6,
-    fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
-    comment: '4',
-    saleCost: '3500',
-    realCost: '3600',
-  },
-];
-
+    {
+      id: 1,
+      noviy: true,
+      mark: '',
+      img: ProductImg1,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3600,
+      realCost: 3600,
+    },
+    {
+      id: 2,
+      noviy: false,
+      mark: '',
+      img: ProductImg2,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 3,
+      noviy: false,
+      mark: '',
+      img: ProductImg3,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 4,
+      noviy: false,
+      mark: '',
+      img: ProductImg4,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 5,
+      noviy: false,
+      mark: '',
+      img: ProductImg5,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 6,
+      noviy: false,
+      mark: '',
+      img: ProductImg6,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 7,
+      noviy: false,
+      mark: '',
+      img: ProductImg1,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 8,
+      noviy: false,
+      mark: '',
+      img: ProductImg2,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 9,
+      noviy: false,
+      mark: '',
+      img: ProductImg3,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 10,
+      noviy: false,
+      mark: '',
+      img: ProductImg4,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 11,
+      noviy: false,
+      mark: '',
+      img: ProductImg5,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3500,
+      realCost: 3600,
+    },
+    {
+      id: 12,
+      noviy: true,
+      mark: '',
+      img: ProductImg6,
+      fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
+      comment: 4,
+      saleCost: 3600,
+      realCost: 3600,
+    },
+  ];
+  
 
 export const PrdBxCartData = [
     {
@@ -544,7 +563,7 @@ export const PrdBxCartData = [
       img: ProductImg1,
       fullName: 'Монитор 23.8" Acer K240YB, Black (UM.QE0EE.B01)',
       comment: '4',
-      saleCost: '3500',
+      saleCost: '3600',
       realCost: '3600',
     },
     {
@@ -914,31 +933,14 @@ export const GeymerData = [
 
 
 export const NavLinks = [
-    {
-        id:0,
-        name:'Акции',
-    },
-    {
-        id:1,
-        name:'Кредит',
-    },
-    {
-        id:2,
-        name:'Оплата и доставка',
-    },
-    {
-        id:3,
-        name:'Помощь',
-    },
-    {
-        id:4,
-        name:'Скупка Б/У',
-    },
-    {
-        id:5,
-        name:'Контакты',
-    },6
-]
+    { id: 0, name: '' },
+    { id: 1, name: 'Кредит' },
+    { id: 2, name: 'Оплата и доставка' },
+    { id: 3, name: 'Помощь' },
+    { id: 4, name: 'Скупка Б/У' },
+    { id: 5, name: 'Контакты' }
+];
+
 
 export const BarLinks = [
     {
@@ -1057,3 +1059,148 @@ export const BarUL = [
 
 ]
 
+
+export const DetailsCaruselPaymentBottom = [
+    {
+        id:0,
+        shopName:'Самовывоз из магазина (Днепропетровск) ',
+        sendDate:'Отправим сегодня',
+        costDelivery:'Бесплатно',
+        img: DetailsCarouselPaymentBottom1 ,
+    },
+    {
+        id:1,
+        shopName:'Самовывоз из Justin',
+        sendDate:'Отправим сегодня',
+        tarif:'Бесплатно',
+        costDelivery:'Или бесплатно от 5000 грн',
+        img: DetailsCarouselPaymentBottom2 ,
+    },
+    {
+        id:2,
+        shopName:'Самовывоз  УКРПОШТА',
+        sendDate:'Отправим завтра',
+        tarif:'По тарифам перевозчика',
+        costDelivery:'Или бесплатно от 5000 грн',
+        img: DetailsCarouselPaymentBottom3 ,
+    },
+    {
+        id:3,
+        shopName:'Самовывоз из Новой Почты',
+        sendDate:'Отправим завтра',
+        tarif:'По тарифам перевозчика',
+        costDelivery:'Или бесплатно от 3000 грн',
+        img: DetailsCarouselPaymentBottom4 ,
+    },
+    {
+        id:4,
+        shopName:'Курьер по вашему адресу',
+        sendDate:'Отправим завтра',
+        tarif:'По тарифам перевозчика',
+        costDelivery:'Или бесплатно от 3000 грн',
+        img: DetailsCarouselPaymentBottom5 ,
+    }
+]
+
+
+
+
+export const DetailsCaruselBottomDelivery = [
+    {
+        id:0,
+        Oimg: DetailsCarouselDeliveryBottom0,
+        Otext:'Оплата при получении товара, Google Pay, картой онлайн',
+    },
+    {
+        id:1,
+        Oimg: DetailsCarouselDeliveryBottom1,
+        Otext:'Рассрочка 0% на 4 мес.',
+         
+    },
+    {
+        id:2,
+        Oimg: DetailsCarouselDeliveryBottom2,
+        Otext:`Кредит, с условиями вы можете ознакомится`,
+
+    },
+]
+
+export const DetailsCaruselBottomWarranty = [
+    {
+        id:0,
+        Oimg: DetailsCarouselDeliveryBottom3,
+        Otext:'36 месяцев',
+    },
+    {
+        id:1,
+        Oimg: DetailsCarouselDeliveryBottom4,
+        Otext:'Обмен/возврат товара в течение 14 дней',
+    },
+]
+
+
+
+export const detailsProductCharacteristics = [
+    {
+        id:0,
+        left:'Класс',
+        right: 'Для работы и дома',
+    },
+    {
+        id:1,
+        left:'Диагональ экрана',
+        right: '14"',         
+    },
+    {
+        id:2,
+        left:'Разрешение экрана',
+        right: '1920x1080',
+    },
+    {
+        id:3,
+        left:'Процессор',
+        right: '	Intel Pentium Silver',         
+    },
+    {
+        id:4,
+        left:'Модель процессора',
+        right: '	Intel Pentium Silver N5000',
+    },
+    {
+        id:5,
+        left:'Частота процессора',
+        right: '1.1 - 2.7 ГГц',         
+    },
+    {
+        id:6,
+        left:'Объем оперативной памяти',
+        right: '4 Gb',
+    },
+    {
+        id:7,
+        left:'Частота процессора',
+        right: '1.1 - 2.7 ГГц',         
+    },
+    {
+        id:8,
+        left:'Объем оперативной памяти',
+        right: '4 Gb',
+    },
+    {
+        id:9,
+        left:'Частота процессора',
+        right: '1.1 - 2.7 ГГц',         
+    },
+
+]
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9

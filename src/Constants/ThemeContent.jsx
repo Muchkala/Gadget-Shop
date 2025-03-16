@@ -14,17 +14,23 @@ export const ThemeProvider = ({ children }) => {
 
 //   Sotib olinayotganda bosilgan productni torib olish va joatish 
 
-  const [dbNewData, setDbNewData] = useState(ProductBoxData)
+  const [dbData, setDbData] = useState(ProductBoxData)
 
-  const [clickedID, setClickedID] = useState()
+  const [clickedID, setClickedID] = useState([]);
 
-  console.log(clickedID)
-  console.log(dbNewData)
-
-  const handleBuyProduct = (ID , e) => {
-    // e.preventDefault()
-    setDbNewData((prev) => prev.filter((item) => item.id !== ID))
-  }
+  const handleBuyProduct = (ID, e) => {
+    e.preventDefault();
+    console.log('db Data buuuuu', dbData)
+    console.log("Button clicked for product ID:", ID); // Debugging
+    
+    const newProduct = dbData?.find((item) => item.id === ID);
+      setClickedID(prevState => [...prevState, newProduct]);
+      
+    console.log("Updated Cart Items:", clickedID); // Debugging
+  };
+   
+  
+  
 
 
 //////////////////////////////////////////////////////////////
@@ -65,7 +71,7 @@ export const ThemeProvider = ({ children }) => {
 
 
   return (
-    <ThemeContext.Provider value={{activeCart,handleBuyProduct,setClickedID,handleActiveCart, setListProductActive, handleListProductActive, listProductActive, activeBar,handleLeftMenuClick, leftMenuClick, handleActiveBar, handleLogin , activeLogin , barInfoStates, handleBarInfo }}>
+    <ThemeContext.Provider value={{activeCart,clickedID,handleBuyProduct,setClickedID,handleActiveCart, setListProductActive, handleListProductActive, listProductActive, activeBar,handleLeftMenuClick, leftMenuClick, handleActiveBar, handleLogin , activeLogin , barInfoStates, handleBarInfo }}>
       {children}
     </ThemeContext.Provider>
   );

@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import './DetailsCarousel.scss'
 import vNaliche from '../../Assets/Img/naqdmi.png'
 import { Col, Container, Row } from 'react-bootstrap'
-import { productDetailImages } from '../../Constants/data'
+import { DetailsCaruselBottomDelivery, DetailsCaruselBottomWarranty, DetailsCaruselPaymentBottom, detailsProductCharacteristics, productDetailImages } from '../../Constants/data'
 import scaleImg from '../../Assets/Img/productPageScale.png'
 import HeartImg from '../../Assets/Img/productPageHeart.png'
-import dostavIMG from '../../Assets/Img/productPagedostavka.svg'
+import UniMiniLink from '../UniTitle/UniMiniLink/UniMiniLink'
 
 
 export default function DetailsCarousel() {
@@ -16,7 +16,7 @@ export default function DetailsCarousel() {
     const activeProduct = productDetailImages[activeValue];
 
     return (
-        <Container>
+        <Container className='detailsProduct'>
             <Row>
                 <Col lg={6}>
                     <div className="detilsCarousel">
@@ -39,8 +39,22 @@ export default function DetailsCarousel() {
                             />
                         </div>
                     </div>
+                    <div className="mainCharacteristics">
+                        <h3>Основные характеристики</h3>
+                        <div className="CharacteristicsBox">
+                            { 
+                            detailsProductCharacteristics.map(({id, right, left}) => {
+                                    return <div className="CHBline" key={id} style={id % 2 == 0 ? {} : {backgroundColor: '#fff'}}>
+                                        <div className="CHBLleft">{left}</div>
+                                        <div className="CHBLright">{right}</div>
+                                    </div>
+                                })
+                            }
+                        </div>
+                        <UniMiniLink text={'Смотреть все характеристики'}/>
+                    </div>
                 </Col>
-                <Col lg={6} style={{height: '500px'}}>
+                <Col lg={6} >
                     <div className="detailsContent w-100">
                         <div className="paymentPart">
                             <div className="paymentPartTop">
@@ -67,19 +81,47 @@ export default function DetailsCarousel() {
                                 </div>
                             </div>
                             <div className="paymentPartBottom">
-                                <h5></h5>
                                 <div className="longBox ">
-                                    <div className="boxline d-flex align-items-center">
-                                        <div className="leftLine d-flex align-items-center">
-                                            <img src={dostavIMG} alt="" style={{width: '30px'}}/>
-                                            <p>Самовывоз из магазина (Днепропетровск) </p>
-                                        </div>
-                                        <p>Отправим сегодня</p>
-                                        <div className="rightLine">
-                                            <p>По тарифам перевозчика</p>
-                                            <p>Или бесплатно от 5000 грн</p>
-                                        </div>
-                                    </div>
+                                    <h5>Доставка</h5>
+                                    {
+                                        DetailsCaruselPaymentBottom.map(({id,  shopName, sendDate, tarif, img,costDelivery}) => {
+                                            return <div key={id} className="boxline">
+                                                    <div className="leftLine ">
+                                                        <img src={img} alt=""/>
+                                                        <p>{shopName}</p>
+                                                    </div>
+                                                    <p>{sendDate}</p>
+                                                    <div className="rightLine">
+                                                        <p className='RLblack'>{tarif}</p>
+                                                        <p className='RLblue'>{costDelivery}</p>
+                                                    </div>
+                                                </div>
+                                        })
+                                    }
+                                </div>
+                                <div className="longBox Oplata">
+                                    <h5>Оплата</h5>
+                                    {
+                                        DetailsCaruselBottomDelivery.map(({id,Oimg, Otext,}) => {
+                                            return <div key={id} className="OplataLine">
+                                            <img src={Oimg} alt="" />
+                                            <p className='OPlataTxt'>{Otext}</p>
+                                            </div>
+                                        })
+                                    }
+
+                                </div>
+                                <div className="longBox Oplata">
+                                    <h5>Гарантия</h5>
+                                    {
+                                        DetailsCaruselBottomWarranty.map(({id,Oimg, Otext,}) => {
+                                            return <div key={id} className="OplataLine">
+                                            <img src={Oimg} alt="" />
+                                            <p className='OPlataTxt'>{Otext}</p>
+                                            </div>
+                                        })
+                                    }
+
                                 </div>
                             </div>
                         </div>

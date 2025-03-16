@@ -5,6 +5,7 @@ import UniTitle from '../UniTitle/UniTitle'
 import ProductBox from '../ProductBox/ProductBox';
 import SeeMore from '../SeeMore/SeeMore';
 import { ProductBoxData } from '../../Constants/data';
+import { Link } from 'react-router-dom';
 
 export default function Toproducts() {
   return (
@@ -12,7 +13,7 @@ export default function Toproducts() {
         <Container>
           <UniTitle text={'Топ продаж'}/>
             <Row style={{justifyContent:'space-between', flexWrap:'wrap'}}>
-              <ProductBox data={ProductBoxData}/>
+              <Link to='/product'><ProductBox data={ProductBoxData}/></Link>
               <SeeMore blue={true}/>
             </Row>
         </Container>

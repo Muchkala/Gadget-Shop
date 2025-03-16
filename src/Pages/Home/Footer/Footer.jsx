@@ -14,22 +14,26 @@ export default function Footer() {
       <Container>
         <Row style={{ justifyContent: 'center' }}>
           <Col lg={10} style={{ display: 'flex', justifyContent: 'space-between' }}>
-            {footerData.map(({ id, ul1, lis }) => (
-              <Col lg={2} >
-                <h4 >{ul1}</h4>
-                <ul >
+          {
+            footerData.map(({ id: parentId, ul1, lis }) => (
+              <Col lg={2} key={parentId}>
+                <h4>{ul1}</h4>
+                <ul>
                   {lis.map(({ id, li }) => (
-                    <Link><li key={id}>{li}</li></Link>
+                    <Link key={`${parentId}-${id}`}><li>{li}</li></Link>
                   ))}
                 </ul>
               </Col>
-            ))}
+            ))
+          }
             <Col lg='3'>
             <h4>Следите за нами</h4>
             <ul style={{display:'flex', justifyContent:'space-between'}}>
-                {footerIcons.map(({id, img})=>(
-                     <Link><li style={{width:'min-content'}} key={id}><img src={img} alt="" /></li></Link>
-                ))}
+                {
+                  footerIcons.map(({id, img})=>(
+                      <Link key={id}><li style={{width:'min-content'}}><img src={img} alt="" /></li></Link>
+                  ))
+                }
             </ul>
             <h4>Подписывайтесь на скидки</h4>
             <div className="inp">
