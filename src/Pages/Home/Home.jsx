@@ -1,42 +1,35 @@
-import React from "react";
-import "./Home.scss";
-import Navbar from "../../Components/Navbar/Navbar";
-import NavBottom from "../../Components/Navbar-bottom/NavBottom";
-import { ThemeProvider, useTheme } from "../../Constants/ThemeContent";
-import BarLeft from "../../Components/Navbar/BarLeft/BarLeft";
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import ReviewsInstagramSection from "../../Components/ReviewsInstagramSection/ReviewsInstagramSection";
-import Partners from "../../Components/Partners/Partners";
-import News from "../../Components/News/News";
-import BigInfo from "../../Components/BigInfo/BigInfo";
-import Footer from "./Footer/Footer";
-import LogIN from "../../Components/LogIN/LogIN"; // Import LogIN
+import { useEffect } from "react";
+import Basket from "../../components/Basket/Basket";
+import Comments from "../../components/Comments/Comments";
+import GameZone from "../../components/GameZone/GameZone";
+import Header from "../../components/Header/Header";
+import InfoSayt from "../../components/InfoSayt/InfoSayt";
+import NewsHome from "../../components/NewsHome/NewsHome";
+import Partners from "../../components/Partners/Partners";
+import ProductsList from "../../components/ProductsList/ProductsList";
+import titleIMG from "../../assets/img/CashIcon.svg"
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
-  return (
-    <ThemeProvider>
-      <HomeContent />
-    </ThemeProvider>
-  );
-}
+  // title and favicon
+  useEffect(() => {
+    document.title = "V COMP - online computer shop"
 
-function HomeContent() {
-  const { activeLogin } = useTheme();
-
+    const link = document.querySelector("link[rel~='icon']") || document.createElement("link");
+    link.rel = "icon";
+    link.href = titleIMG;
+    document.head.appendChild(link);
+  }, [])
   return (
-    <div className="Home">
-      <Navbar />
-      <NavBottom />
-      <BarLeft />
-      {activeLogin && <LogIN />} {/* Conditionally render LogIN */}
+    <>
+      <Basket />
       <Header />
-      <Main />
-      <ReviewsInstagramSection />
+      <ProductsList />
+      <GameZone />
+      <Comments />
       <Partners />
-      <News />
-      <BigInfo />
-      <Footer />
-    </div>
-  );
+      <NewsHome />
+      <InfoSayt />
+    </>
+  )
 }

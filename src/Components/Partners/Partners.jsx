@@ -1,53 +1,38 @@
-import React from "react";
-import Slider from "react-slick";
-import UniTitle from "../UniTitle/UniTitle";
+import { Col, Container, Row } from 'react-bootstrap'
 import './Partners.scss'
-import { Container, Row } from "react-bootstrap";
-import Partner1 from '../../Assets/Img/Partner1.png'
-import Partner2 from '../../Assets/Img/Partner2.png'
-import Partner3 from '../../Assets/Img/Partner3.png'
-import Partner4 from '../../Assets/Img/Partner4.png'
-import Partner5 from '../../Assets/Img/Partner5.png'
-import UniMiniLink from "../UniTitle/UniMiniLink/UniMiniLink";
+import Marquee from "react-fast-marquee";
+import partner1 from "../../assets/img/Partners (1).svg"
+import partner2 from "../../assets/img/Partners (2).svg"
+import partner3 from "../../assets/img/Partners (3).svg"
+import partner4 from "../../assets/img/Partners (4).svg"
+import partner5 from "../../assets/img/Partners (5).svg"
+
 
 export default function Partners() {
-    const settings = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 8,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 2000,
-        cssEase: "linear"
-      };
-  return (
-    <Container className="Partners"> 
-        <UniTitle text={'Партнеры'}/>
-        <Row >
-            <div className="slider-container">
-                <Slider {...settings}>
-                    
-                    <img src={Partner1} alt="" />
-                    
-                    <img src={Partner2} alt="" />
-                    
-                    <img src={Partner3} alt="" />
-                    
-                    <img src={Partner4} alt="" />
-                    
-                    <img src={Partner5} alt="" />
+      const partnersData = [
+            { id: 0, image: partner1 },
+            { id: 1, image: partner2 },
+            { id: 2, image: partner3 },
+            { id: 3, image: partner4 },
+            { id: 4, image: partner5 },
+      ]
+      return (
+            <div className='partners'>
 
-                    <img src={Partner1} alt="" />
-                    
-                    <img src={Partner2} alt="" />
-                    
-                    <img src={Partner3} alt="" />
-                    
-                </Slider>
-            </div>
-        </Row>
-        <UniMiniLink text={'Все партнеры'}/>
-    </Container>
-  )
+                  <Container >
+                        <Row>
+                              <Col lg={12}>
+                                    <h1 className='title'>Партнеры</h1>
+                              </Col>
+                              <Col lg={12}>
+                                    <Marquee {...{ autoFill: true, speed: 40, direction: "right", gradient: false }}>
+                                          {partnersData.map(({ id, image }) => {
+                                                return <img src={image} key={id} alt="" />
+                                          })}
+                                    </Marquee>
+                              </Col>
+                        </Row>
+                  </Container >
+            </div >
+      )
 }
